@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homeScreen4RowModel" type="com.glosaryconstarint.app.modules.homescreen.data.model.HomeScreen4RowModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintFrame"
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_156pxh" style="@style/groupStyledeep_orange_50cornerRadius">
+        <ImageView android:id="@+id/imageImage"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginStart="@dimen/_15pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_width="@dimen/_126pxh"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/txtGranolaPremiu"
+            app:layout_constraintDimensionRatio="1.0:0.6666667"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            imageRes="@{@drawable/img_image_62}" tools:src="@drawable/img_image_62"/>
+        <TextView android:gravity="start"
+            android:id="@+id/txtGranolaPremiu"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_9pxh"
+            android:layout_marginStart="@dimen/_9pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="0dp"
+            android:text="@{homeScreen4RowModel.txtGranolaPremiu}"
+            app:layout_constraintBottom_toTopOf="@+id/constraintFrame1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageImage"
+            style="@style/txtMontserratmedium14" tools:text="@string/msg_granola_premiu"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintFrame1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_18pxv"
+            android:layout_marginEnd="@dimen/_13pxh"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/txtGranolaPremiu">
+            <TextView android:ellipsize="end" android:id="@+id/txt1Kg"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_54pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{homeScreen4RowModel.txt1Kg}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toEndOf="@+id/txt2200"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/txtMontserratsemibold14_1" tools:text="@string/lbl_1_kg"/>
+            <TextView android:ellipsize="end" android:id="@+id/txt2200"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{homeScreen4RowModel.txt2200}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/txt1Kg"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/txtMontserratbold14_1" tools:text="@string/lbl_22_00"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="myWallet1RowModel" type="com.glosaryconstarint.app.modules.mywallet.data.model.MyWallet1RowModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintItem"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txt17Oct2021"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_266pxh"
+            android:layout_width="0dp" android:singleLine="true"
+            android:text="@{myWallet1RowModel.txt17Oct2021}"
+            app:layout_constraintBottom_toTopOf="@+id/constraintFrame"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/txtMontserratregular18_5" tools:text="@string/lbl_17_oct_2021"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintFrame"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_width="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt17Oct2021" style="@style/groupStylewhite_2">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtCashbackReceiv"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_136pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{myWallet1RowModel.txtCashbackReceiv}"
+                app:layout_constraintBottom_toTopOf="@+id/txt2"
+                app:layout_constraintEnd_toStartOf="@+id/txt2"
+                app:layout_constraintHorizontal_bias="0.09"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/txtMontserratsemibold16_2" tools:text="@string/msg_cashback_receiv"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtTransactionId"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_24pxv"
+                android:layout_marginEnd="@dimen/_74pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{myWallet1RowModel.txtTransactionId}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/txt2"
+                app:layout_constraintHorizontal_bias="0.09"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCashbackReceiv"
+                style="@style/txtMontserratregular14_6" tools:text="@string/msg_transaction_id"/>
+            <TextView android:ellipsize="end" android:id="@+id/txt2"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_11pxv"
+                android:layout_marginEnd="@dimen/_24pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{myWallet1RowModel.txt2}"
+                app:layout_constraintBaseline_toBaselineOf="@+id/txtTransactionId"
+                app:layout_constraintBottom_toBottomOf="@+id/txtTransactionId"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.33"
+                app:layout_constraintStart_toEndOf="@+id/txtTransactionId"
+                app:layout_constraintTop_toBottomOf="@+id/txtCashbackReceiv"
+                style="@style/txtMontserratsemibold22" tools:text="@string/lbl_2"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

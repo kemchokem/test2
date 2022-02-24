@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="splashVM" type="com.glosaryconstarint.app.modules.splash.data.viewmodel.SplashVM"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintSplash"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintSGGrocery"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_51pxh"
+            android:layout_marginStart="@dimen/_51pxh"
+            android:layout_marginTop="@dimen/_364pxv"
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtSGGrocery"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_12pxv"
+                android:layout_marginStart="@dimen/_17pxh"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_width="0dp" android:singleLine="true"
+                android:text="@{splashVM.splashModel.txtSGGrocery}"
+                app:layout_constraintBottom_toBottomOf="@+id/imageGroup400"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageGroup400"
+                app:layout_constraintTop_toTopOf="@+id/imageGroup400"
+                style="@style/txtMontserratlight42" tools:text="@string/lbl_sg_grocery"/>
+            <ImageView android:id="@+id/imageGroup400"
+                android:layout_height="@dimen/_78pxh"
+                android:layout_width="@dimen/_53pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group400_5"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/txtSGGrocery"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtYourNeedsInJ"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_408pxv"
+            android:layout_marginEnd="@dimen/_58pxh"
+            android:layout_marginStart="@dimen/_59pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="0dp" android:singleLine="true"
+            android:text="@{splashVM.splashModel.txtYourNeedsInJ}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintSGGrocery"
+            style="@style/txtMontserratregular20_1" tools:text="@string/msg_your_needs_in_j"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

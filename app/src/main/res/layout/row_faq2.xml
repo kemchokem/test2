@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="faq2RowModel" type="com.glosaryconstarint.app.modules.faq.data.model.Faq2RowModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintGroup"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <ImageView android:id="@+id/imageCard"
+            android:layout_height="0dp"
+            android:layout_width="@dimen/_396pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_card_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1.0:0.14393939"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintGroup275"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_18pxv"
+            android:layout_marginEnd="@dimen/_19pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageCard"
+            app:layout_constraintEnd_toEndOf="@+id/imageCard"
+            app:layout_constraintStart_toStartOf="@+id/imageCard" app:layout_constraintTop_toTopOf="@+id/imageCard">
+            <ImageView android:id="@+id/imageIcon"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/_66pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="@dimen/_24pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_icon_11"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1.0:0.875"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.27"
+                app:layout_constraintStart_toEndOf="@+id/txtWhatIsMinimum" app:layout_constraintTop_toTopOf="@+id/txtWhatIsMinimum"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtWhatIsMinimum"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{faq2RowModel.txtWhatIsMinimum}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageIcon"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/txtMontserratregular16_1" tools:text="@string/msg_what_is_minimum"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="aboutUs3RowModel" type="com.glosaryconstarint.app.modules.aboutus.data.model.AboutUs3RowModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" style="@style/groupStylegray_1">
+        <TextView android:ellipsize="end" android:gravity="center"
+            android:id="@+id/txtPrivacyPolicy"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_marginEnd="@dimen/_224pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_2pxv"
+            android:layout_width="0dp" android:singleLine="true"
+            android:text="@{aboutUs3RowModel.txtPrivacyPolicy}"
+            app:layout_constraintBottom_toBottomOf="@+id/imageIcon"
+            app:layout_constraintEnd_toStartOf="@+id/imageIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageIcon"
+            style="@style/txtMontserratregular16_1" tools:text="@string/lbl_privacy_policy"/>
+        <ImageView android:id="@+id/imageIcon"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_17pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_17pxv"
+            android:layout_width="@dimen/_21pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_icon_23"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="0.9513043:1.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.72"
+            app:layout_constraintStart_toEndOf="@+id/txtPrivacyPolicy" app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

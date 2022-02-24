@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="myAddresses1RowModel" type="com.glosaryconstarint.app.modules.myaddresses.data.model.MyAddresses1RowModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintFrame"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <ImageView android:id="@+id/imageSelect"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_46pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_26pxv"
+            android:layout_width="@dimen/_18pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_select"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintFrame1"
+            app:layout_constraintDimensionRatio="1.0:1.0"
+            app:layout_constraintEnd_toStartOf="@+id/imageRectangle56"
+            app:layout_constraintHorizontal_bias="0.04"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="@+id/constraintFrame1"/>
+        <ImageView android:id="@+id/imageRectangle56"
+            android:layout_height="0dp"
+            android:layout_width="@dimen/_362pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_rectangle56"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1.0:0.48066297"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintStart_toEndOf="@+id/imageSelect" app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintFrame1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_60pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_width="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageRectangle56" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@+id/imageFrame"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/_4pxv"
+                android:layout_marginStart="@dimen/_177pxh"
+                android:layout_width="@dimen/_52pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_frame_13"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintFrame2"
+                app:layout_constraintDimensionRatio="1.0:0.34615386"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.63"
+                app:layout_constraintStart_toEndOf="@+id/constraintFrame2" app:layout_constraintTop_toTopOf="parent"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintFrame2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/txt4517Washington"
+                app:layout_constraintEnd_toStartOf="@+id/imageFrame"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtHome"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_7pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{myAddresses1RowModel.txtHome}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageIcon"
+                    app:layout_constraintTop_toTopOf="parent"
+                    style="@style/txtMontserratsemibold18_2" tools:text="@string/lbl_home"/>
+                <ImageView android:id="@+id/imageIcon"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/_2pxv"
+                    android:layout_width="@dimen/_19pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_icon_13"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="0.97700006:1.0"
+                    app:layout_constraintEnd_toStartOf="@+id/txtHome"
+                    app:layout_constraintHorizontal_bias="0.77"
+                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView android:gravity="start"
+                android:id="@+id/txt4517Washington"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_27pxh"
+                android:layout_marginStart="@dimen/_27pxh"
+                android:layout_marginTop="@dimen/_16pxv"
+                android:layout_width="0dp"
+                android:text="@{myAddresses1RowModel.txt4517Washington}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintFrame2"
+                style="@style/txtMontserratregular14_5" tools:text="@string/msg_4517_washington"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

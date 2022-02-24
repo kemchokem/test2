@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="payment1RowModel" type="com.glosaryconstarint.app.modules.payment.data.model.Payment1RowModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintGroup"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <ImageView android:id="@+id/imageCard"
+            android:layout_height="0dp"
+            android:layout_width="@dimen/_396pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_card_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1.0:0.14393939"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+        <RadioButton android:buttonTint="@color/gray_502"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat"
+            android:id="@+id/rbGroup84"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_18pxv"
+            android:layout_marginEnd="@dimen/_201pxh"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_19pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@string/msg_cash_on_deliver"
+            android:textColor="@color/gray_603"
+            android:textFontWeight="400"
+            android:textSize="@dimen/_16pxh" android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/imageCard"
+            app:layout_constraintEnd_toEndOf="@+id/imageCard"
+            app:layout_constraintStart_toStartOf="@+id/imageCard"
+            app:layout_constraintTop_toTopOf="@+id/imageCard" tools:text="@string/msg_cash_on_deliver"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

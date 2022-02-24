@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="aboutUs2RowModel" type="com.glosaryconstarint.app.modules.aboutus.data.model.AboutUs2RowModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintFrame"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <ImageView android:id="@+id/imageImage"
+            android:layout_height="0dp"
+            android:layout_width="@dimen/_138pxh"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/txtJaneCooper"
+            app:layout_constraintDimensionRatio="1.0:1.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" circular="@{true}"
+            imageRes="@{@drawable/img_image_11}" tools:src="@drawable/img_image_11"/>
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtJaneCooper"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_width="0dp" android:singleLine="true"
+            android:text="@{aboutUs2RowModel.txtJaneCooper}"
+            app:layout_constraintBottom_toTopOf="@+id/txtFounder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageImage"
+            style="@style/txtMontserratsemibold18_2" tools:text="@string/lbl_jane_cooper"/>
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtFounder"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_34pxh"
+            android:layout_marginStart="@dimen/_34pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="0dp" android:singleLine="true"
+            android:text="@{aboutUs2RowModel.txtFounder}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtJaneCooper"
+            style="@style/txtMontserratsemibold16_3" tools:text="@string/lbl_founder"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

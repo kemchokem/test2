@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homeScreen5RowModel" type="com.glosaryconstarint.app.modules.homescreen.data.model.HomeScreen5RowModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintGroup"
+        android:layout_height="wrap_content" android:layout_width="@dimen/_87pxh">
+        <ImageView android:id="@+id/imageBackground"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_37pxv"
+            android:layout_width="@dimen/_87pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_background_3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="0.9886364:1.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnGroecries"
+            android:layout_height="@dimen/_38pxv"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_width="0dp"
+            android:paddingBottom="@dimen/_11pxv"
+            android:paddingEnd="@dimen/_14pxh"
+            android:paddingStart="@dimen/_14pxh"
+            android:paddingTop="@dimen/_11pxv" android:singleLine="true"
+            android:text="@string/lbl_groecries"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageImage"
+            style="@style/btnSolidRoundedBottomCorner" tools:text="@string/lbl_groecries"/>
+        <ImageView android:id="@+id/imageImage"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_6pxh"
+            android:layout_marginStart="@dimen/_6pxh"
+            android:layout_width="@dimen/_75pxh"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/btnGroecries"
+            app:layout_constraintDimensionRatio="1.0:0.8666667"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            imageRes="@{@drawable/img_image_52}" tools:src="@drawable/img_image_52"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
