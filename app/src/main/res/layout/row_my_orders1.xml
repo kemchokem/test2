@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="myOrders1RowModel" type="com.glosaryconstarint.app.modules.myorders.data.model.MyOrders1RowModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintGroup"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintGroup331"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_width="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/constraintFrame">
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnViewOrderDeta"
+                android:layout_height="@dimen/_36pxv"
+                android:layout_width="@dimen/_145pxh"
+                android:paddingBottom="@dimen/_10pxv"
+                android:paddingEnd="@dimen/_7pxh"
+                android:paddingStart="@dimen/_7pxh"
+                android:paddingTop="@dimen/_9pxv"
+                android:singleLine="true"
+                android:text="@string/msg_view_order_deta"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/txtGetInvoice"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/btnRoundedOutline" tools:text="@string/msg_view_order_deta"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtGetInvoice"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_9pxv"
+                android:layout_marginStart="@dimen/_141pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{myOrders1RowModel.txtGetInvoice}"
+                app:layout_constraintBottom_toBottomOf="@+id/btnViewOrderDeta"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.48"
+                app:layout_constraintStart_toEndOf="@+id/btnViewOrderDeta"
+                app:layout_constraintTop_toTopOf="@+id/btnViewOrderDeta"
+                style="@style/txtMontserratsemibold14" tools:text="@string/lbl_get_invoice"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintFrame"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintGroup331"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" style="@style/groupStylewhite_3">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDeliveredOn23"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_18pxv"
+                android:layout_marginEnd="@dimen/_39pxh"
+                android:layout_marginStart="@dimen/_27pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{myOrders1RowModel.txtDeliveredOn23}"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintGroup330"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toEndOf="@+id/constraintGroup330"
+                app:layout_constraintTop_toTopOf="@+id/constraintGroup330"
+                style="@style/txtMontserratsemibold16_2" tools:text="@string/msg_delivered_on_23"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintGroup330"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_24pxv"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_width="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/txtDeliveredOn23"
+                app:layout_constraintHorizontal_bias="0.04"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <ImageView android:id="@+id/imageSDPAS0023500r7"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/_15pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="@dimen/_52pxh"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="0.9637775:1.0"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.2"
+                    app:layout_constraintStart_toEndOf="@+id/imageImage"
+                    app:layout_constraintTop_toTopOf="@+id/imageImage"
+                    imageRes="@{@drawable/img_image_5}" tools:src="@drawable/img_image_5"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btn1"
+                    android:layout_height="@dimen/_55pxh"
+                    android:layout_marginStart="@dimen/_15pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="@dimen/_53pxh"
+                    android:paddingBottom="@dimen/_13pxv"
+                    android:paddingEnd="@dimen/_13pxh"
+                    android:paddingStart="@dimen/_14pxh"
+                    android:paddingTop="@dimen/_10pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_14"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.2"
+                    app:layout_constraintStart_toEndOf="@+id/imageImage"
+                    app:layout_constraintTop_toTopOf="@+id/imageImage"
+                    style="@style/btnSolidRounded_1" tools:text="@string/lbl_14"/>
+                <ImageView android:id="@+id/imageImage"
+                    android:layout_height="0dp"
+                    android:layout_width="@dimen/_59pxh"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageSDPAS0023500r7"
+                    app:layout_constraintDimensionRatio="1.0:0.9322034"
+                    app:layout_constraintEnd_toStartOf="@+id/imageSDPAS0023500r7"
+                    app:layout_constraintHorizontal_bias="0.3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    imageRes="@{@drawable/img_image_6}" tools:src="@drawable/img_image_6"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

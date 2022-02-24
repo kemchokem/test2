@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="explore5RowModel" type="com.glosaryconstarint.app.modules.explore.data.model.Explore5RowModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintFrame"
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_114pxh" style="@style/groupStylegray_102cornerRadius">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintFrame1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_7pxv"
+            android:layout_marginEnd="@dimen/_8pxh"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_18pxv"
+            android:layout_width="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/imageImage">
+            <TextView android:ellipsize="end" android:gravity="start"
+                android:id="@+id/txtParleRusk"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_33pxh"
+                android:layout_width="0dp" android:singleLine="true"
+                android:text="@{explore5RowModel.txtParleRusk}"
+                app:layout_constraintBottom_toTopOf="@+id/txt500G"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/txtMontserratmedium12" tools:text="@string/lbl_parle_rusk"/>
+            <TextView android:ellipsize="end" android:id="@+id/txt3"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_59pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{explore5RowModel.txt3}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageIcon"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt500G"
+                style="@style/txtMontserratsemibold12" tools:text="@string/lbl_3"/>
+            <TextView android:ellipsize="end" android:id="@+id/txt500G"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{explore5RowModel.txt500G}"
+                app:layout_constraintBottom_toTopOf="@+id/txt3"
+                app:layout_constraintEnd_toStartOf="@+id/imageIcon"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtParleRusk"
+                style="@style/txtMontserratregular12_1" tools:text="@string/lbl_500_g"/>
+            <ImageView android:id="@+id/imageIcon"
+                android:layout_height="0dp"
+                android:layout_marginBottom="@dimen/_5pxv"
+                android:layout_marginStart="@dimen/_39pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="@dimen/_24pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_icon_44"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1.0:1.0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintStart_toEndOf="@+id/txt500G" app:layout_constraintTop_toTopOf="@+id/txt500G"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView android:id="@+id/imageImage"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_26pxh"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_17pxv"
+            android:layout_width="@dimen/_62pxh"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/constraintFrame1"
+            app:layout_constraintDimensionRatio="1.0:0.8064516"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            imageRes="@{@drawable/img_image_39}" tools:src="@drawable/img_image_39"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="imageSliderGroup189Model" type="com.glosaryconstarint.app.modules.homescreen.data.model.ImageSliderGroup189Model"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintGroup790"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylegreen_500cornerRadius">
+        <TextView android:id="@+id/txtEverydayEssent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_35pxh"
+            android:layout_marginStart="@dimen/_35pxh"
+            android:layout_marginTop="@dimen/_26pxv"
+            android:layout_width="wrap_content"
+            android:text="@{imageSliderGroup189Model.txtEverydayEssent}"
+            app:layout_constraintEnd_toStartOf="@+id/imageImage"
+            app:layout_constraintHorizontal_bias="0.11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageImage"
+            style="@style/txtMontserratregular20_2" tools:text="@string/msg_everyday_essent"/>
+        <TextView android:ellipsize="end" android:id="@+id/txt10Off"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_60pxh"
+            android:layout_marginStart="@dimen/_35pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{imageSliderGroup189Model.txt10Off}"
+            app:layout_constraintBottom_toBottomOf="@+id/imageImage"
+            app:layout_constraintEnd_toStartOf="@+id/imageImage"
+            app:layout_constraintHorizontal_bias="0.11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtEverydayEssent"
+            style="@style/txtMontserratbold20" tools:text="@string/lbl_10_off"/>
+        <ImageView android:id="@+id/imageImage"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_18pxv"
+            android:layout_marginEnd="@dimen/_28pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="0dp" android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.82"
+            app:layout_constraintStart_toEndOf="@+id/txtEverydayEssent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.50252527"
+            imageUrl="@{imageSliderGroup189Model.imageImage}" tools:src="@drawable/img_image_51"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

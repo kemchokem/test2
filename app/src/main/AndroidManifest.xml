@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.glosaryconstarint.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.glosaryconstarint.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity android:exported="true"
+            android:name="com.glosaryconstarint.app.modules.incorrectotp.ui.IncorrectOtpActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.user.ui.UserActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.homescreen.ui.HomeScreenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.mysubscription.ui.MySubscriptionActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.contactus.ui.ContactUsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.appnavigation.ui.AppNavigationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.myorders.ui.MyOrdersActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.fruits.ui.FruitsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.explore.ui.ExploreActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.mywallet.ui.MyWalletActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.explore6.ui.Explore6Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.aboutus.ui.AboutUsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.otpsent.ui.OtpSentActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.myaddresses.ui.MyAddressesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.faq.ui.FaqActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.correctotp.ui.CorrectOtpActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.privacypolicy.ui.PrivacyPolicyActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.incorrectmobilenumber.ui.IncorrectMobileNumberActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.details.ui.DetailsActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.termsofservices.ui.TermsOfServicesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.mycart.ui.MyCartActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.splash.ui.SplashActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.payment.ui.PaymentActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.loginwithmobile.ui.LoginWithMobileActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.glosaryconstarint.app.modules.correctmobilenumber.ui.CorrectMobileNumberActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

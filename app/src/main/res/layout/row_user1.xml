@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="user1RowModel" type="com.glosaryconstarint.app.modules.user.data.model.User1RowModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintFrame"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <TextView android:ellipsize="end" android:gravity="center"
+            android:id="@+id/txtFAQ"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_2pxv"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_width="0dp" android:singleLine="true"
+            android:text="@{user1RowModel.txtFAQ}"
+            app:layout_constraintBottom_toBottomOf="@+id/imageFrame"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageFrame"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/txtMontserratregular18_2" tools:text="@string/lbl_faq"/>
+        <ImageView android:id="@+id/imageFrame"
+            android:layout_height="0dp"
+            android:layout_width="@dimen/_24pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_frame_5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1.0:1.0"
+            app:layout_constraintEnd_toStartOf="@+id/txtFAQ"
+            app:layout_constraintHorizontal_bias="0.26"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

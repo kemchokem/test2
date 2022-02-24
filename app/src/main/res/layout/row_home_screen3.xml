@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="homeScreen3RowModel" type="com.glosaryconstarint.app.modules.homescreen.data.model.HomeScreen3RowModel"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintFrame1"
+        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_156pxh" style="@style/groupStylegray_102cornerRadius">
+        <ImageView android:id="@+id/imageImage"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/_32pxh"
+            android:layout_marginStart="@dimen/_32pxh"
+            android:layout_marginTop="@dimen/_14pxv"
+            android:layout_width="@dimen/_92pxh"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/txtSoftDrinks"
+            app:layout_constraintDimensionRatio="1.0:0.8804348"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            imageRes="@{@drawable/img_image_59}" tools:src="@drawable/img_image_59"/>
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtSoftDrinks"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_31pxh"
+            android:layout_marginStart="@dimen/_31pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="0dp" android:singleLine="true"
+            android:text="@{homeScreen3RowModel.txtSoftDrinks}"
+            app:layout_constraintBottom_toTopOf="@+id/txtUpto40Off"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageImage"
+            style="@style/txtMontserratsemibold16_4" tools:text="@string/lbl_soft_drinks"/>
+        <TextView android:ellipsize="end" android:gravity="start"
+            android:id="@+id/txtUpto40Off"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_13pxv"
+            android:layout_marginEnd="@dimen/_34pxh"
+            android:layout_marginStart="@dimen/_35pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_width="0dp" android:singleLine="true"
+            android:text="@{homeScreen3RowModel.txtUpto40Off}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSoftDrinks"
+            style="@style/txtMontserratbold12" tools:text="@string/lbl_upto_40_off"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
